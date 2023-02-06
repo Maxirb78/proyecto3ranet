@@ -1,0 +1,10 @@
+@mixin tamanio($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+@mixin flex($display, $dir, $jc) {
+    display: $display;
+    flex-direction: $dir;
+    justify-content: $jc;
+}

@@ -1,0 +1,62 @@
+/** Navegación **/
+
+.header {
+    background-color: $colorMenu;
+    border-bottom: 5px solid $colorBorde;
+}
+
+.barra {
+    @include flex(flex, column, space-between);
+    align-items: center;
+    padding: 20px;
+
+    &__navegacion {
+        width: 100%;
+    }
+
+    &__navegacion--menu {
+        @include flex(flex, column, center);
+        text-align: center;
+        gap: 20px;
+        @include tamanio(auto, 100%);
+        padding: 0;
+        margin-bottom: 0;
+
+        a {
+            font-size: 20px;
+            color: $colorFuentegris;
+            transition: 0.3s;
+
+            &:hover {
+                border-top: 1px solid $blanco;
+                border-bottom: 1px solid $blanco;
+                color: $blanco;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+.barra__sociales--iconos {
+    font-size: 20px;
+    color: $colorFuentegris;
+    &:hover {
+        color: $blanco;
+    }
+}
+
+.barra__sociales--menu {
+    display: flex;
+    gap: 20px;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+.barra__sociales-imagen {
+    width: 42px;
+
+}
+
+.sociales-1 {
+    width: 61px;
+}

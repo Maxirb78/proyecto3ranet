@@ -1,0 +1,46 @@
+/** Nuestros Vinos **/
+
+
+.galeria {
+    @include flex(flex, column, center);
+}
+
+.galeria__fotos {
+    width: 100%;
+
+}
+.galeria__fotos img {
+    @extend %imagen;
+    filter: grayscale(1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.galeria__fotos img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1 ,1.1);
+}
+
+
+.foto1 {
+    grid-area: area1;
+
+}
+.foto2 {
+    grid-area: area6;
+}
+.foto3 {
+    grid-area: area5;
+}
+.foto4 {
+    grid-area: area4;
+}
+.foto5 {
+    grid-area: area7;
+}
+.foto6 {
+    grid-area: area3;
+}
+.foto7 {
+    grid-area: area3;
+}

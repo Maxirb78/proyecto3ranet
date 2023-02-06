@@ -1,0 +1,63 @@
+/** Globales **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: $FuentePrincipal;
+    margin: 0;
+    padding: 0;
+    background-color: #e1e1e1;
+}
+
+h2 {
+    font-family: $FuenteSecundaria;
+    font-size: 40px;
+    text-align: center;
+    color: $colorTitulo;
+    padding: 25px;
+}
+
+.btn {
+    /* margin-top: 20px; */
+    padding: 10px 20px;
+    background-color: $colorTitulo;
+    color: #F2C063;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+
+    &:hover {
+        background-color: transparent;
+        color: $colorTitulo;
+        border: 1px solid $colorTitulo;
+        transition: 0.5s;
+        transform: scale(1.1, 1.2);
+        font-weight: bold;
+    }
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}

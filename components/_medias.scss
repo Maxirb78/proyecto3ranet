@@ -1,0 +1,102 @@
+/** Media queries **/
+
+/** Header **/
+
+
+@media screen and (min-width: 768px) {
+    .barra {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:480px) {
+
+    /*menu centrado*/
+    .barra__navegacion--menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /*menu a la derecha*/
+    .barra__navegacion--menu {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .barra__sociales--menu {
+        padding-top: 0;
+    }
+}
+
+/** Inicio **/
+
+/*Hero*/
+
+@media only screen and (min-width:768px) {
+    .hero__contenedor {
+        width: 40%;
+        padding-left: 20px;
+    }
+}
+
+/*Elaboracion*/ 
+@media screen and (min-width:768px) {
+    .elaboracion__contenedor {
+        flex-direction: row;
+    }
+}
+
+/*Origen*/
+@media screen and (min-width:768px) {
+    .origenes__contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/*Noticias*/ 
+
+@media screen and (min-width:768px) {
+    .noticias__contenido {
+        flex-direction: row;
+    }
+}
+
+/*Newsleter */
+
+
+@media screen and (min-width:600px) {
+    .newslleter__contenedor {
+        flex-direction: row;
+    }
+}
+
+/** vinos **/
+
+@media screen and (min-width:768px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        'area1 area6 area4'
+        'area1 area6 area4'
+        'area3 area5 area7 '
+        'area3 area5 area2 ';
+        gap: 10px;
+        background-color: #fff;
+        padding: 50px;
+    } 
+}
+
+/** Footer **/
+
+@media screen and (min-width:768px) {
+    .footer__contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+}
